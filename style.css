@@ -293,12 +293,22 @@ main,
 }
 
 .thumb {
+  position: relative;
   padding: 0;
-  border: none;
+  border: 1px solid transparent;
   overflow: hidden;
   background: transparent;
   cursor: pointer;
-  opacity: 0.74;
+  opacity: 1;
+  transition: var(--transition);
+}
+
+.thumb::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.28);
+  pointer-events: none;
   transition: var(--transition);
 }
 
@@ -309,8 +319,13 @@ main,
 }
 
 .thumb.is-active {
-  opacity: 1;
+  border-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.18);
   transform: translateY(-2px);
+}
+
+.thumb.is-active::after {
+  background: rgba(0, 0, 0, 0.02);
 }
 
 .info-grid {
@@ -322,6 +337,10 @@ main,
 
 .info-card-large {
   grid-row: span 2;
+}
+
+.requirements-card {
+  transform: translateY(-20px);
 }
 
 .title-frame {
@@ -498,22 +517,16 @@ main,
   padding-bottom: 68px;
 }
 
-.footer-grid {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 24px;
-  align-items: end;
+.footer-about-card {
+  aspect-ratio: 900 / 420;
 }
 
-.footer-logo {
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  min-height: 220px;
-}
-
-.footer-logo img {
-  max-width: 220px;
+.footer-integrated-logo {
+  position: absolute;
+  right: 42px;
+  bottom: 28px;
+  width: min(18vw, 200px);
+  z-index: 3;
 }
 
 .paper-card {
@@ -606,12 +619,13 @@ main,
 }
 
 .paper-card-footer {
-  aspect-ratio: 900 / 420;
+  width: 100%;
 }
 
 .footer-paper-content {
   justify-content: flex-start;
   padding-top: 82px;
+  padding-right: 260px;
 }
 
 .footer-paper-content h2 {
@@ -645,8 +659,7 @@ button,
 @media (max-width: 900px) {
   .info-grid,
   .story-block,
-  .story-block.reverse,
-  .footer-grid {
+  .story-block.reverse {
     grid-template-columns: 1fr;
   }
 
@@ -663,8 +676,14 @@ button,
     font-size: 1.68rem;
   }
 
-  .footer-logo {
-    min-height: auto;
+  .footer-integrated-logo {
+    right: 28px;
+    bottom: 22px;
+    width: min(26vw, 160px);
+  }
+
+  .footer-paper-content {
+    padding-right: 180px;
   }
 }
 
@@ -697,6 +716,10 @@ button,
 
   .carousel-thumbnails {
     gap: 10px;
+  }
+
+  .requirements-card {
+    transform: translateY(-12px);
   }
 
   .paper-card-content {
@@ -735,6 +758,14 @@ button,
 
   .footer-paper-content {
     padding-top: 40px;
+    padding-right: 28px;
+    padding-bottom: 120px;
+  }
+
+  .footer-integrated-logo {
+    right: 20px;
+    bottom: 18px;
+    width: 110px;
   }
 
   .title-frame h2 {
