@@ -412,7 +412,7 @@ main,
 
 .bookshelf-wrap {
   width: 100%;
-  padding: 18px 0 8px;
+  padding: 12px 0 4px;
 }
 
 .bookshelf {
@@ -518,13 +518,14 @@ main,
 }
 
 .footer-about-card {
+  width: 100%;
   aspect-ratio: 900 / 420;
 }
 
 .footer-integrated-logo {
   position: absolute;
-  right: 42px;
-  bottom: 28px;
+  right: 105px;
+  bottom: 70px;
   width: min(18vw, 200px);
   z-index: 3;
 }
@@ -624,8 +625,10 @@ main,
 
 .footer-paper-content {
   justify-content: flex-start;
-  padding-top: 82px;
-  padding-right: 260px;
+  align-items: flex-start;
+  padding-top: 56px;
+  padding-right: 360px;
+  padding-bottom: 56px;
 }
 
 .footer-paper-content h2 {
@@ -676,14 +679,16 @@ button,
     font-size: 1.68rem;
   }
 
-  .footer-integrated-logo {
-    right: 28px;
-    bottom: 22px;
-    width: min(26vw, 160px);
+  .footer-paper-content {
+    padding-top: 42px;
+    padding-right: 220px;
+    padding-bottom: 42px;
   }
 
-  .footer-paper-content {
-    padding-right: 180px;
+  .footer-integrated-logo {
+    right: 72px;
+    bottom: 46px;
+    width: min(24vw, 150px);
   }
 }
 
@@ -757,15 +762,15 @@ button,
   }
 
   .footer-paper-content {
-    padding-top: 40px;
+    padding-top: 32px;
     padding-right: 28px;
     padding-bottom: 120px;
   }
 
   .footer-integrated-logo {
-    right: 20px;
-    bottom: 18px;
-    width: 110px;
+    right: 50px;
+    bottom: 34px;
+    width: 96px;
   }
 
   .title-frame h2 {
