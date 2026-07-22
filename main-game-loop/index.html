@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inkognito – Main Game Loop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Grenze+Gotisch:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <script src="../script.js" defer></script>
+</head>
+<body class="page-subpage page-mgl">
+  <div class="page-bg" aria-hidden="true"></div>
+  <a class="skip-link" href="#main-content">Zum Inhalt springen</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html" aria-label="Zur Startseite Inkognito">
+        <img src="../images/inkognito-icon.png" alt="Inkognito Spielicon" />
+      </a>
+
+      <div class="header-actions">
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Menü öffnen" data-menu-toggle>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-menu" id="site-menu" aria-label="Hauptnavigation" data-menu>
+          <a href="../historischer-hintergrund/index.html">Historischer Hintergrund</a>
+          <a href="../konzept/index.html">Konzept</a>
+          <a href="../charaktere/index.html">Charaktere</a>
+          <a href="../3d/index.html">3D</a>
+          <a href="./index.html">Main Game Loop</a>
+          <a href="../minigames/index.html">Minigames</a>
+          <a href="#about">About</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="subpage-main">
+    <section class="section hero subpage-hero">
+      <div class="container">
+        <div class="title-frame">
+          <img src="../images/titelrahmen.png" alt="" />
+          <h1>Main Game Loop</h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container subpage-story-layout">
+        <div class="story-block">
+          <div class="story-media panel">
+            <img src="../images/mgl1.png" alt="Erstes Bild zum Main Game Loop" />
+          </div>
+
+          <div class="paper-card paper-card-story story-text">
+            <img src="../images/papier-story-text.png" alt="" class="paper-card-bg" />
+            <div class="paper-card-content">
+              <h2>Tagesablauf</h2>
+              <p>Der Tag startet, die NPCs kommen ins Postamt, und wir führen Dialoge und bearbeiten Minigames. Danach wird der Tag beendet und der nächste Tag beginnt.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="story-block reverse">
+          <div class="story-media panel">
+            <img src="../images/mgl2.png" alt="Zweites Bild zum Main Game Loop" />
+          </div>
+
+          <div class="paper-card paper-card-story story-text">
+            <img src="../images/papier-story-text.png" alt="" class="paper-card-bg" />
+            <div class="paper-card-content">
+              <h2>Auswertung</h2>
+              <p>Wenn alle Tage gespielt wurden, wird die Suspicion auf Basis der NPC-individuellen Sympathiewerte berechnet. Daraus wird anschließend der passende Spielausgang als Bad, Neutral oder Good kalkuliert.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section subpage-bookshelf-section" id="about">
+      <div class="bookshelf-wrap">
+        <div class="bookshelf-mobile-stage">
+          <div class="bookshelf" aria-label="Unterseiten von Inkognito">
+            <img class="bookshelf-base" src="../images/buecherregal.png" alt="Bücherregal mit auswählbaren Themen" />
+
+            <div class="book-item book-1">
+              <a class="book-hotspot" href="../historischer-hintergrund/index.html" aria-label="Historischer Hintergrund" data-sound="../audio/book-1.m4a"></a>
+              <img class="book-overlay" src="../images/buch1.png" alt="" />
+            </div>
+
+            <div class="book-item book-2">
+              <a class="book-hotspot" href="../konzept/index.html" aria-label="Konzept" data-sound="../audio/book-2.m4a"></a>
+              <img class="book-overlay" src="../images/buch2.png" alt="" />
+            </div>
+
+            <div class="book-item book-3">
+              <a class="book-hotspot" href="../charaktere/index.html" aria-label="Charaktere" data-sound="../audio/book-3.m4a"></a>
+              <img class="book-overlay" src="../images/buch3.png" alt="" />
+            </div>
+
+            <div class="book-item book-4">
+              <a class="book-hotspot" href="../3d/index.html" aria-label="3D" data-sound="../audio/book-1.m4a"></a>
+              <img class="book-overlay" src="../images/buch4.png" alt="" />
+            </div>
+
+            <div class="book-item book-6">
+              <a class="book-hotspot" href="./index.html" aria-label="Main Game Loop" data-sound="../audio/book-3.m4a"></a>
+              <img class="book-overlay" src="../images/buch6.png" alt="" />
+            </div>
+
+            <div class="book-item book-7">
+              <a class="book-hotspot" href="../minigames/index.html" aria-label="Minigames" data-sound="../audio/book-1.m4a"></a>
+              <img class="book-overlay" src="../images/buch7.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
