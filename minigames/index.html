@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inkognito – Minigames</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&family=Grenze+Gotisch:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../style.css" />
+  <script src="../script.js" defer></script>
+</head>
+<body class="page-subpage page-minigames">
+  <div class="page-bg" aria-hidden="true"></div>
+  <a class="skip-link" href="#main-content">Zum Inhalt springen</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html" aria-label="Zur Startseite Inkognito">
+        <img src="../images/inkognito-icon.png" alt="Inkognito Spielicon" />
+      </a>
+
+      <div class="header-actions">
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu" aria-label="Menü öffnen" data-menu-toggle>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="site-menu" id="site-menu" aria-label="Hauptnavigation" data-menu>
+          <a href="../historischer-hintergrund/index.html">Historischer Hintergrund</a>
+          <a href="../konzept/index.html">Konzept</a>
+          <a href="../charaktere/index.html">Charaktere</a>
+          <a href="../3d/index.html">3D</a>
+          <a href="../main-game-loop/index.html">Main Game Loop</a>
+          <a href="./index.html">Minigames</a>
+          <a href="#about">Bibliothek</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="subpage-main">
+    <section class="section hero subpage-hero">
+      <div class="container">
+        <div class="title-frame">
+          <img src="../images/titelrahmen.png" alt="" />
+          <h1>Minigames</h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container subpage-card-grid subpage-card-grid-3">
+        <article class="paper-card paper-card-small">
+          <img src="../images/papier-info-klein.png" alt="" class="paper-card-bg" />
+          <div class="paper-card-content">
+            <h2>Potion</h2>
+            <p>Potion Minigame (Andreas)</p>
+          </div>
+        </article>
+
+        <article class="paper-card paper-card-small paper-card-inverted">
+          <img src="../images/papier-info-klein.png" alt="" class="paper-card-bg" />
+          <div class="paper-card-content">
+            <h2>Decipher</h2>
+            <p>Decipher Minigame (Andreas)</p>
+          </div>
+        </article>
+
+        <article class="paper-card paper-card-small">
+          <img src="../images/papier-info-klein.png" alt="" class="paper-card-bg" />
+          <div class="paper-card-content">
+            <h2>Polyomino</h2>
+            <p>Polyomino/Puzzle Minigame (Andreas)</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container minigame-groups">
+        <section class="minigame-group" aria-labelledby="puzzle-group-title">
+          <div class="title-frame">
+            <img src="../images/titelrahmen.png" alt="" />
+            <h2 id="puzzle-group-title">Puzzle / Polyomino</h2>
+          </div>
+
+          <div class="minigame-stack">
+            <figure class="panel gallery-image"><img src="../images/puzzle_1.png" alt="Puzzle-Minigame Ansicht 1" /></figure>
+            <figure class="panel gallery-image"><img src="../images/puzzle_2.png" alt="Puzzle-Minigame Ansicht 2" /></figure>
+            <figure class="panel gallery-image"><img src="../images/puzzle_3.png" alt="Puzzle-Minigame Ansicht 3" /></figure>
+          </div>
+        </section>
+
+        <section class="minigame-group" aria-labelledby="decipher-group-title">
+          <div class="title-frame">
+            <img src="../images/titelrahmen.png" alt="" />
+            <h2 id="decipher-group-title">Decipher</h2>
+          </div>
+
+          <div class="minigame-stack">
+            <figure class="panel gallery-image"><img src="../images/decipher_1.png" alt="Decipher-Minigame Ansicht 1" /></figure>
+            <figure class="panel gallery-image"><img src="../images/decipher_2.png" alt="Decipher-Minigame Ansicht 2" /></figure>
+            <figure class="panel gallery-image"><img src="../images/decipher_3.png" alt="Decipher-Minigame Ansicht 3" /></figure>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container subpage-card-grid subpage-card-grid-2">
+        <article class="paper-card paper-card-large">
+          <img src="../images/papier-info-gross.png" alt="" class="paper-card-bg" />
+          <div class="paper-card-content">
+            <h2>Letter / Package Sorting</h2>
+            <p>Ein NPC gibt Briefe oder Pakete mit den entsprechenden Zustellungsinformationen ab. Wir sortieren die Briefe und Pakete anhand der ortsbezogenen Wappen in die passenden Regale. Dieses Minigame funktioniert stärker als Filler-Minispiel.</p>
+          </div>
+        </article>
+
+        <article class="paper-card paper-card-large">
+          <img src="../images/papier-info-gross.png" alt="" class="paper-card-bg" />
+          <div class="paper-card-content">
+            <h2>Smuggle</h2>
+            <p>Ein Schmuggler gibt einen geheimen Gegenstand ab, bisher ein Ei. Wir verstecken diesen Gegenstand für den Fall einer Kontrolle durch den Inquisitor. Danach holt der Schmuggler das Item wieder ab oder lässt es optional beim Spieler, etwa wenn aus dem Ei ein Drache schlüpft.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container minigame-groups">
+        <section class="minigame-group" aria-labelledby="tracing-group-title">
+          <div class="title-frame">
+            <img src="../images/titelrahmen.png" alt="" />
+            <h2 id="tracing-group-title">Tracing</h2>
+          </div>
+
+          <div class="minigame-stack minigame-wide-stack">
+            <figure class="panel gallery-image"><img src="../images/tracing_1.png" alt="Tracing-Minigame Ansicht 1" /></figure>
+            <figure class="panel gallery-image"><img src="../images/tracing_2.png" alt="Tracing-Minigame Ansicht 2" /></figure>
+            <figure class="panel gallery-image"><img src="../images/tracing_3.png" alt="Tracing-Minigame Ansicht 3" /></figure>
+          </div>
+        </section>
+
+        <section class="minigame-group" aria-labelledby="xray-group-title">
+          <div class="title-frame">
+            <img src="../images/titelrahmen.png" alt="" />
+            <h2 id="xray-group-title">XRay</h2>
+          </div>
+
+          <div class="minigame-stack minigame-wide-stack">
+            <figure class="panel gallery-image"><img src="../images/xray.png" alt="XRay-Minigame Ansicht" /></figure>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="section subpage-bookshelf-section" id="about">
+      <div class="bookshelf-wrap">
+        <div class="bookshelf-mobile-stage">
+          <div class="bookshelf" aria-label="Unterseiten von Inkognito">
+            <img class="bookshelf-base" src="../images/buecherregal.png" alt="Bücherregal mit auswählbaren Themen" />
+
+            <div class="book-item book-1">
+              <a class="book-hotspot" href="../historischer-hintergrund/index.html" aria-label="Historischer Hintergrund" data-sound="../audio/book-1.m4a"></a>
+              <img class="book-overlay" src="../images/buch1.png" alt="" />
+            </div>
+
+            <div class="book-item book-2">
+              <a class="book-hotspot" href="../konzept/index.html" aria-label="Konzept" data-sound="../audio/book-2.m4a"></a>
+              <img class="book-overlay" src="../images/buch2.png" alt="" />
+            </div>
+
+            <div class="book-item book-3">
+              <a class="book-hotspot" href="../charaktere/index.html" aria-label="Charaktere" data-sound="../audio/book-3.m4a"></a>
+              <img class="book-overlay" src="../images/buch3.png" alt="" />
+            </div>
+
+            <div class="book-item book-4">
+              <a class="book-hotspot" href="../3d/index.html" aria-label="3D" data-sound="../audio/book-1.m4a"></a>
+              <img class="book-overlay" src="../images/buch4.png" alt="" />
+            </div>
+
+            <div class="book-item book-6">
+              <a class="book-hotspot" href="../main-game-loop/index.html" aria-label="Main Game Loop" data-sound="../audio/book-3.m4a"></a>
+              <img class="book-overlay" src="../images/buch6.png" alt="" />
+            </div>
+
+            <div class="book-item book-7">
+              <a class="book-hotspot" href="./index.html" aria-label="Minigames" data-sound="../audio/book-1.m4a"></a>
+              <img class="book-overlay" src="../images/buch7.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
